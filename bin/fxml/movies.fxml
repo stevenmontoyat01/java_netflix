@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMovies">
+   <children>
+      <Text fill="WHITE" layoutX="39.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="register of movies and series" textAlignment="CENTER" underline="true" wrappingWidth="295.13671875">
+         <font>
+            <Font name="Century" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="39.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre:" wrappingWidth="71.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="35.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="categoria:" wrappingWidth="78.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inputName" layoutX="129.0" layoutY="70.0" />
+      <TextField fx:id="inputCategoria" layoutX="129.0" layoutY="117.0" />
+      <Text fx:id="textAlert" fill="RED" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" wrappingWidth="362.13671919703484">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Text>
+      <BorderPane layoutX="379.0" layoutY="47.0" prefHeight="160.0" prefWidth="200.0">
+         <center>
+            <ImageView fitHeight="183.0" fitWidth="200.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Images/peliculas%20y%20series.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Button fx:id="buttonNew" layoutX="39.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickNew" prefHeight="33.0" prefWidth="71.0" text="new">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDelete" layoutX="308.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="33.0" prefWidth="71.0" text="delete">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonUpdate" layoutX="179.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickUpdate" prefHeight="33.0" prefWidth="71.0" text="update">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonView" layoutX="440.0" layoutY="254.0" mnemonicParsing="false" onAction="#clickView" prefHeight="33.0" prefWidth="78.0" text="view">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scroll" layoutX="160.0" layoutY="311.0" prefHeight="63.0" prefWidth="235.0" visible="false">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="62.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="textMovies" layoutY="-1.0" prefHeight="63.0" prefWidth="218.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fx:id="Searchlupa" fitHeight="33.0" fitWidth="40.0" layoutX="282.0" layoutY="66.0" onMouseClicked="#clickSearch">
+         <image>
+            <Image url="@../Images/search1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

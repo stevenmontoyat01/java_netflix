@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="605.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerHome">
+   <children>
+      <MenuBar layoutX="-3.0" layoutY="2.0" prefHeight="25.0" prefWidth="607.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="movies - serie">
+            <items>
+              <MenuItem fx:id="products" mnemonicParsing="false" onAction="#productsOnesClick" text="resgister and view" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="customers">
+            <items>
+              <MenuItem fx:id="clientes" mnemonicParsing="false" onAction="#clientesOneClick" text="register customers" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="sales">
+               <items>
+                  <MenuItem fx:id="ventas" mnemonicParsing="false" onAction="#ventasOneClick" text="register sales" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="exit">
+            <items>
+              <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitOneClick" text="close of program" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fill="#d01909" layoutX="169.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" text="Blookbuster video" textAlignment="CENTER" underline="true" wrappingWidth="262.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="229.0" fitWidth="386.0" layoutX="117.0" layoutY="113.0">
+         <image>
+            <Image url="@../Images/home%202.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
